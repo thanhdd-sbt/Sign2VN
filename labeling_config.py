@@ -37,8 +37,8 @@ LANDMARK_DIM = 3  # x, y, z
 
 # Processing settings
 SKIP_EXISTING = True  # Skip videos đã xử lý
-MAX_FRAMES_PER_VIDEO = 300  # Giới hạn số frames (None = không giới hạn)
-MIN_FRAMES_REQUIRED = 5  # Số frames tối thiểu để video hợp lệ
+MAX_FRAMES_PER_VIDEO = None  # Giới hạn số frames (None = không giới hạn)
+MIN_FRAMES_REQUIRED = 1  # Số frames tối thiểu để video hợp lệ
 
 # Video extensions to process
 VIDEO_EXTENSIONS = ['.mp4', '.avi', '.mov', '.mkv']
