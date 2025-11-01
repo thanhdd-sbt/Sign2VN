@@ -50,8 +50,7 @@ class Trainer:
             self.optimizer,
             mode='min',
             factor=0.5,
-            patience=config.REDUCE_LR_PATIENCE,
-            verbose=True
+            patience=config.REDUCE_LR_PATIENCE
         )
         
         # Training history
