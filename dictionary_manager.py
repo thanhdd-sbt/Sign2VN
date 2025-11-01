@@ -77,8 +77,12 @@ class DictionaryManager:
         
         # Try exact match with _id
         for entry in self.dictionary:
-            local_video = entry.get('local_video') or ''
-            if local_video and local_video.endswith(basename):
+            # Safe access with None checks
+            if not entry or not isinstance(entry, dict):
+                continue
+            
+            local_video = entry.get('local_video')
+            if local_video and isinstance(local_video, str) and local_video.endswith(basename):
                 return entry
         
         # Try match by _id prefix (e.g., D0001B from D0001B_địa_chỉ.mp4)
