@@ -117,7 +117,7 @@ SHARED_FOLDERS = [
     "users/thanhnv/data/videos_nnkh",
 ]
 
-DICTIONARY_PATH = "users/thanhnv/data/videos/dictionary.json"
+DICTIONARY_PATH = "users/thanhnv/data/dictionary.json"
 
 OUTPUT_ROOT = "/content/drive/MyDrive/Sign2VN"
 ```
