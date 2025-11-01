@@ -77,7 +77,8 @@ class DictionaryManager:
         
         # Try exact match with _id
         for entry in self.dictionary:
-            if entry.get('local_video', '').endswith(basename):
+            local_video = entry.get('local_video') or ''
+            if local_video and local_video.endswith(basename):
                 return entry
         
         # Try match by _id prefix (e.g., D0001B from D0001B_địa_chỉ.mp4)
